@@ -10,6 +10,20 @@ p{
   color: #8f8f8f;
 }
 
+/* responsive margin */
+/** mobile **/
+@media(max-widht:768px){
+.container-fluid{
+  padding: 3% 5% 7%;
+}
+}
+/** tablet **/
+@media(min-width:768px) and (max-width:992px){
+  .container-fluid{
+    padding: 3% 7% 7%;
+  }
+}
+
 /* Heading */
 .big-heading{
   font-weight: 900;
@@ -85,11 +99,7 @@ p{
   z-index: 0;
 }
 
-@media(min-width:768px) and (max-width:992px){
-  .container-fluid{
-    padding: 3% 7% 7%;
-  }
-}
+
 @media(max-width:768px){
   #title{
     text-align: center;
