@@ -10,30 +10,41 @@ p{
   color: #8f8f8f;
 }
 
-/* responsive margin */
-/** mobile **/
-@media(max-widht:768px){
+
+
+
+/* Heading */
+@media(max-width:768px){
+  .big-heading{
+    font-weight: 900;
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+}
+@media(min-width:768){
+  .big-heading{
+  font-weight: 900;
+  font-size: 3rem;
+  line-height: 1.5;
+ }
+}
+/* container-fluid */
+@media(max-width:768px){
 .container-fluid{
   padding: 3% 5% 7%;
 }
 }
-/** tablet **/
+
 @media(min-width:768px) and (max-width:992px){
   .container-fluid{
     padding: 3% 7% 7%;
   }
 }
 
-/* Heading */
-.big-heading{
-  font-weight: 900;
-  font-size: 3rem;
-  line-height: 1.5;
-}
-
-/* container-fluid */
-.container-fluid{
+@media(min-width:992){
+  .container-fluid{
   padding: 3% 15% 7%;
+  }
 }
 
 /* section-color */
@@ -57,11 +68,22 @@ p{
 .navbar{
   padding-bottom: 0 0 4.5rem;
 }
-.navbar-brand
-{
-  font-family: "Ubuntu";
-  font-size: 2.5rem;
-  font-weight: bold;
+
+@media(max-width:768px){
+  .navbar-brand
+  {
+    font-family: "Ubuntu";
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+}
+@media(min-width:768px){
+  .navbar-brand
+  {
+    font-family: "Ubuntu";
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
 }
 
 .nav-item{
@@ -83,11 +105,18 @@ p{
 #title{
   text-align: left;
 }
-
+@media(max-width:768px){
+  #title .big-heading{
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-bottom: 10%;
+  }
+}
+@media(min-width:768px){
 #title .big-heading{
   font-size: 3.5rem;
+ }
 }
-
 /* Title Image */
 
 .title-image{
@@ -152,6 +181,9 @@ p{
 .carousel-item{
   padding: 7% 15%;
 }
+#testimonial-carousel{
+  border: 0px;
+}
 
 #press{
   background-color: #ef8172;
@@ -165,8 +197,28 @@ p{
 
 
 /* Prices card */
+
+@media(max-width:768px){
+  #pricing{
+    padding: 7% 10%;
+  }
+  .card{
+    margin: 3%;
+  }
+}
+@media(min-width:768px) and (max-width:992px){
+  #pricing{
+  padding: 7% 8%;
+  }
+  .card{
+    margin-top: 8%;
+  }
+}
+
+@media (min-width:992px){
 #pricing{
   padding: 7% 20%;
+}
 }
 
 .h-100{
