@@ -1,254 +1,321 @@
-body, footer{
-    text-align : center;
+body, footer {
+  text-align: center;
 }
 
-h1, h2, h3, h4, h5, p{
+h1, h2, h3, h4, h5, p {
   font-family: 'Montserrat';
 }
 
-p{
+p {
   color: #8f8f8f;
 }
 
-
-
-
 /* Heading */
-@media(max-width:768px){
-  .big-heading{
+@media(max-width: 767.99px) {
+  .big-heading {
     font-weight: 900;
     font-size: 1.5rem;
     line-height: 1.5;
   }
 }
-@media(min-width:768){
-  .big-heading{
-  font-weight: 900;
-  font-size: 3rem;
-  line-height: 1.5;
- }
-}
-/* container-fluid */
-@media(max-width:768px){
-.container-fluid{
-  padding: 3% 5% 7%;
-}
+
+@media(min-width: 768px) {
+  .big-heading {
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 1.5;
+  }
 }
 
-@media(min-width:768px) and (max-width:992px){
-  .container-fluid{
+/* container-fluid */
+@media(max-width: 767.99px) {
+  .container-fluid {
+    padding: 3% 5% 7%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container-fluid {
     padding: 3% 7% 7%;
   }
 }
 
-@media(min-width:992){
-  .container-fluid{
-  padding: 3% 15% 7%;
+@media (min-width: 992px) {
+  .container-fluid {
+    padding: 3% 20% 7%;
   }
 }
 
+
 /* section-color */
-
-.colored-section{
+.colored-section {
   background-color: #ff4c68;
   color: #fff;
 }
 
-.white-section{
+.white-section {
   background-color: #ffff;
-}
-
-#title{
-  background-color: #ff4c68;
-  color: #fff;
 }
 
 /* Navigation Bar */
 
-.navbar{
+#navigationBar .container {
+  padding: 5% 10%;
+}
+
+@media(min-width: 1200px){
+#navigationBar .container {
+  margin : 0;
+  padding : 3% 10%;
+}
+.navbarExtraLarge {
+  position: relative;
+  margin : 0 5% 0 80%;
+ }
+}
+
+.navbar {
   padding-bottom: 0 0 4.5rem;
 }
 
-@media(max-width:768px){
-  .navbar-brand
-  {
+@media(max-width: 767.99px) {
+  .navbar-brand {
     font-family: "Ubuntu";
     font-size: 1.5rem;
     font-weight: bold;
   }
 }
-@media(min-width:768px){
-  .navbar-brand
-  {
+
+@media(min-width: 768px) {
+  .navbar-brand {
     font-family: "Ubuntu";
     font-size: 2.5rem;
     font-weight: bold;
   }
 }
 
-.nav-item{
+@media(min-width: 992px) {
+  .navbar-brand {
+    font-family: "Ubuntu";
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+}
+
+.nav-item {
   padding: 0 18px;
 }
 
-.nav-link{
+.nav-link {
   font-size: 1.2rem;
   font-family: "Montserrat";
-
 }
 
+
 /* Download Button */
-.button-download{
+.button-download {
   margin: 5% 3% 5% 0;
 }
 
 /* Title text */
-#title{
-  text-align: left;
-}
-@media(max-width:768px){
-  #title .big-heading{
-    font-size: 2rem;
-    line-height: 2rem;
-    margin-bottom: 10%;
-  }
-}
-@media(min-width:768px){
-#title .big-heading{
-  font-size: 3.5rem;
- }
-}
-/* Title Image */
-
-.title-image{
-  margin : 15%;
-  width: 60%;
-  margin-left: 30%;
-  transform: rotate(25deg);
-  position: absolute;
-  z-index: 0;
-}
-
-
-@media(max-width:768px){
-  #title{
+@media(max-width: 767.99px) {
+  .title-container {
+    padding: 5% 5%;
     text-align: center;
   }
-  .title-image{
-    margin-left: 15%;
+
+  .title-heading {
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 10%;
+  }
+
+  .title-image {
+    margin-top: 10%;
+    width: 70%;
     position: relative;
     transform: rotate(0);
   }
 }
 
- /* Features */
+@media(min-width:768px) {
+  .title-container {
+    padding: 5% 10%;
+    text-align: left;
+  }
 
-#features{
+  .title-heading {
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 1.5;
+  }
+
+  .title-image {
+    margin-left: 10%;
+    position: absolute;
+    transform: rotate(20deg);
+    width:70%;
+    z-index: 0;
+  }
+}
+
+@media(min-width:992px) {
+  .title-container {
+    padding: 5% 15%;
+    text-align: left;
+  }
+
+  .title-heading {
+    font-weight: 900;
+    font-size: 3.5rem;
+    line-height: 1.5;
+  }
+
+  .title-image {
+    margin: 8% 15%;
+    width: 60%;
+    margin-left: 30%;
+    transform: rotate(25deg);
+    position: absolute;
+    z-index: 0;
+  }
+}
+
+@media(min-width: 1200px){
+
+  .title-container {
+    padding: 5% 15%;
+    text-align: left;
+  }
+
+  .title-heading {
+    font-weight: 900;
+    font-size: 4rem;
+    line-height: 1.5;
+  }
+
+  .title-image {
+    margin: 8% 15%;
+    width: 60%;
+    margin-left: 30%;
+    transform: rotate(25deg);
+    position: absolute;
+    z-index: 0;
+  }
+  .button-download {
+    margin: 10% 5%;
+  }
+}
+
+/* Features */
+#features {
   padding: 7% 10%;
   position: relative;
   z-index: 1;
 }
 
- .featurebox{
-   padding : 2.5%;
+.featurebox {
+  padding: 2.5%;
 }
 
-#features .feature-heading{
-    margin-top: 1rem;
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-    font-weight: bold;
+#features .feature-heading {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-weight: bold;
 }
 
-.icon{
+.icon {
   color: #ef8172;
 }
-.icon:hover{
+
+.icon:hover {
   color: #ff4c68;
 }
 
-
 /* testimonials */
-
-#testimonials{
+#testimonials {
   background-color: #ef8172;
 }
-.testimonials-image{
-  margin :2%;
+
+.testimonials-image {
+  margin: 2%;
   width: 10%;
   border-radius: 100%;
 }
 
-.carousel-item{
+.carousel-item {
   padding: 7% 15%;
 }
-#testimonial-carousel{
+
+#testimonial-carousel {
   border: 0px;
 }
 
-#press{
+#press {
   background-color: #ef8172;
   padding-bottom: 3%;
 }
 
-.press-logo{
+.press-logo {
   width: 15%;
   margin: 20px 20px 50px;
 }
 
-
 /* Prices card */
-
-@media(max-width:768px){
-  #pricing{
-    padding: 7% 10%;
+@media(max-width: 767.99px) {
+  #pricing {
+    padding: 3% 10%;
   }
-  .card{
+
+  .card {
     margin: 3%;
+    margin-top: 3%;
   }
 }
-@media(min-width:768px) and (max-width:992px){
-  #pricing{
-  padding: 7% 8%;
+
+@media(min-width:768px) {
+  #pricing {
+    padding: 7% 8%;
   }
-  .card{
+
+  .card {
     margin-top: 8%;
   }
 }
 
-@media (min-width:992px){
-#pricing{
-  padding: 7% 20%;
-}
+@media (min-width:992px) {
+  #pricing {
+    padding: 7% 10%;
+  }
 }
 
-.h-100{
+.h-100 {
   height: 100%;
 }
 
-.price{
+.price {
   line-height: 1.5rem;
   padding: 3% 2%;
 }
 
 /* Call to Action */
-
-#cta{
+#cta {
   padding-top: 7%;
 }
 
-
 /* icon-footer */
-
-#footer{
+#footer {
   padding: 7% 20%;
 }
 
-.icon-f{
-  padding:1.5%;
+.icon-f {
+  padding: 1.5%;
   color: black;
 }
 
-.p-footer{
+.p-footer {
   font-family: "Montserrat";
-  padding:2%;
+  padding: 2%;
 }
